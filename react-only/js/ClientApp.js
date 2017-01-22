@@ -11,14 +11,16 @@ var PageTitle = React.createClass({
 	}
 })
 
+var PageTitleFactory = React.createFactory(PageTitle)
+
 var FirstComponent = React.createClass({
 	render: function () {
 		return (
 			div(null,
-				React.createElement(PageTitle, {title: 'Page Title 1'}, null),
-				React.createElement(PageTitle, {title: 'Page Title 2'}, null),
-				React.createElement(PageTitle, {title: 'Page Title 3'}, null),
-				React.createElement(PageTitle, {title: 'Page Title 4'}, null)
+				PageTitleFactory({title: 'Page Title 1'}),
+				PageTitleFactory({title: 'Page Title 2'}),
+				PageTitleFactory({title: 'Page Title 3'}),
+				PageTitleFactory({title: 'Page Title 4'})
 			)
 		)
 	}
