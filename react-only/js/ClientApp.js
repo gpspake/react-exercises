@@ -5,7 +5,7 @@ var PageTitle = React.createClass({
 	render: function () {
 		return (
 			div(null,
-				h1(null, this.props.title)
+				h1({style: {color: this.props.color, fontWeight: '300'}}, this.props.title)
 			)
 		)
 	}
@@ -17,10 +17,10 @@ var FirstComponent = React.createClass({
 	render: function () {
 		return (
 			div(null,
-				PageTitleFactory({title: 'Page Title 1'}),
-				PageTitleFactory({title: 'Page Title 2'}),
-				PageTitleFactory({title: 'Page Title 3'}),
-				PageTitleFactory({title: 'Page Title 4'})
+				PageTitleFactory({title: 'Page Title 1', color: 'peru'}),
+				PageTitleFactory({title: 'Page Title 2', color: 'tomato'}),
+				PageTitleFactory({title: 'Page Title 3', color: 'rebeccapurple'}),
+				PageTitleFactory({title: 'Page Title 4', color: 'mediumaquamarine'})
 			)
 		)
 	}
