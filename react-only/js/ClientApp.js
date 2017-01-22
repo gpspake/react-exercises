@@ -15,6 +15,9 @@ var FirstComponent = React.createClass({
 	render: function () {
 		return (
 			div(null,
+				React.createElement(PageTitle),
+				React.createElement(PageTitle),
+				React.createElement(PageTitle),
 				React.createElement(PageTitle)
 			)
 		)
