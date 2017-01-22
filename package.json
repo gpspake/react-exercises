@@ -1,0 +1,13 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Frontend Masters - Complete Intro to React v2 (feat. Router v4 and Redux)",
+  "main": "index.js",
+  "repository": "https://github.com/gpspake/react-exercises.git",
+  "author": "George Spake <gpspake@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
