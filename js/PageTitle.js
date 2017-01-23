@@ -5,10 +5,13 @@ var h1 = React.DOM.h1
 
 var PageTitle = React.createClass({
   render: function () {
+    const style = {color: this.props.color, fontWeight: '300'}
     return (
-      div(null,
-        h1({style: {color: this.props.color, fontWeight: '300'}}, this.props.title)
-      )
+      <div>
+        <h1 style={style}>
+          {this.props.title}
+        </h1>
+      </div>
     )
   }
 })
