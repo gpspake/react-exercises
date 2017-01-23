@@ -1,18 +1,20 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import PageTitle from './PageTitle'
+import { render } from 'react-dom'
+import '../public/normalize.css'
+import '../public/style.css'
 
-var FirstComponent = React.createClass({
-  render: function () {
+const App = React.createClass({
+  render () {
     return (
-      <div>
-        <PageTitle title='Page Title 1' color='peru' />
-        <PageTitle title='Page Title 2' color='tomato' />
-        <PageTitle title='Page Title 3' color='rebeccapurple' />
-        <PageTitle title='Page Title 4' color='mediumaquamarine' />
+      <div className='app'>
+        <div className='landing'>
+          <h1>React Video</h1>
+          <input type='text' placeholder='Search' />
+          <a>or Browse All</a>
+        </div>
       </div>
     )
   }
 })
 
-ReactDOM.render(React.createElement(FirstComponent), document.getElementById('app'))
+render(<App />, document.getElementById('app'))
