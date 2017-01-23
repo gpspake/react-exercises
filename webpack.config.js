@@ -14,7 +14,7 @@ module.exports = {
   stats: {
     colors: true,
     reasons: true,
-    chunks:true
+    chunks: true
   },
   module: {
     rules: [
