@@ -1,17 +1,8 @@
-/* global React ReactDOM */
+import React from 'react'
+import ReactDOM from 'react-dom'
+import PageTitle from './PageTitle'
 
 var div = React.DOM.div
-var h1 = React.DOM.h1
-
-var PageTitle = React.createClass({
-  render: function () {
-    return (
-      div(null,
-        h1({style: {color: this.props.color, fontWeight: '300'}}, this.props.title)
-      )
-    )
-  }
-})
 
 var PageTitleFactory = React.createFactory(PageTitle)
 
