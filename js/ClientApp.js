@@ -8,11 +8,11 @@ import '../public/style.css'
 const App = React.createClass({
   render () {
     return (
-      <div className='app'>
-        <HashRouter>
+      <HashRouter>
+        <div className='app'>
           <Match exactly pattern='/' component={Landing} />
-        </HashRouter>
-      </div>
+        </div>
+      </HashRouter>
     )
   }
 })
