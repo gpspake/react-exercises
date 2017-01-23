@@ -7,7 +7,7 @@
   "author": "George Spake <gpspake@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "standard",
+    "lint": "eslint js/**/*.js webpack.config.js",
     "build": "webpack",
     "watch": "npm run build -- --watch"
   },
