@@ -6,6 +6,11 @@
   "repository": "https://github.com/gpspake/react-exercises.git",
   "author": "George Spake <gpspake@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "lint": "standard",
+    "build": "webpack",
+    "watch": "npm run build -- --watch"
+  },
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
