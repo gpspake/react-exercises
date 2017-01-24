@@ -2,13 +2,15 @@ import React from 'react'
 
 const ShowCard = React.createClass({
   render () {
+    const { poster, title, year, description } = this.props.show
+
     return (
       <div className='show-card'>
-        <img src={`/public/img/posters/${this.props.show.poster}`} />
+        <img src={`/public/img/posters/${poster}`} />
         <div>
-          <h3>{this.props.show.title}</h3>
-          <h4>({this.props.show.year})</h4>
-          <p>{this.props.show.description}</p>
+          <h3>{title}</h3>
+          <h4>({year})</h4>
+          <p>{description}</p>
         </div>
       </div>
     )
