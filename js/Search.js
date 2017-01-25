@@ -3,12 +3,17 @@ import preload from '../public/data.json'
 import ShowCard from './ShowCard'
 
 const Search = React.createClass({
+  getInitialState () {
+    return {
+      searchTerm: 'default string'
+    }
+  },
   render () {
     return (
       <div className='search'>
         <header>
           <h1>React Video</h1>
-          <input type='text' palceholder='Search' />
+          <input value={this.state.searchTerm} type='text' palceholder='Search' />
         </header>
         <div>
           {preload.shows.map((show) => {
