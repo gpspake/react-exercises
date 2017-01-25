@@ -3,10 +3,10 @@ const { string } = React.PropTypes
 
 const ShowCard = React.createClass({
   propTypes: {
-      poster: string,
-      title: string,
-      year: string,
-      description: string
+    poster: string,
+    title: string,
+    year: string,
+    description: string
   },
   render () {
     const { poster, title, year, description } = this.props
