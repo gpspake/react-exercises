@@ -14,6 +14,7 @@ const Search = React.createClass({
         <header>
           <h1>React Video</h1>
           <input value={this.state.searchTerm} type='text' palceholder='Search' />
+          <input value={this.state.searchTerm} type='text' placeholder='Search' />
         </header>
         <div>
           {preload.shows.map((show) => {
