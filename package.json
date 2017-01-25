@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint js/**/*.js webpack.config.js",
+    "test": "NODE_ENV=test jest",
     "build": "webpack",
     "dev": "webpack-dev-server",
     "watch": "npm run build -- --watch"
