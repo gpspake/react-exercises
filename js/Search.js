@@ -20,6 +20,7 @@ const Search = React.createClass({
         </header>
         <div>
           {preload.shows
+          {this.props.shows
             .filter((show) => {
               return `${show.title} ${show.description}`.toUpperCase().indexOf(this.state.searchTerm.toUpperCase()) >= 0
             })
