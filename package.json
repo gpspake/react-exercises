@@ -10,6 +10,8 @@
     "lint": "eslint js/**/*.js webpack.config.js",
     "test": "NODE_ENV=test jest",
     "update-test": "npm run test -- -u",
+    "coverage": "npm run test -- --coverage",
+    "coverage-html": "open coverage/lcov-report/index.html",
     "build": "webpack",
     "dev": "webpack-dev-server",
     "watch": "npm run build -- --watch"
