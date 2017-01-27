@@ -1,5 +1,6 @@
 import React from 'react'
 import ShowCard from './ShowCard'
+import Header from './Header'
 const { arrayOf, shape, string } = React.PropTypes
 
 const Search = React.createClass({
