@@ -14,11 +14,6 @@ const Details = React.createClass({
       imdbID: string
     })
   },
-  getInitialState () {
-    return {
-      omdbData: {}
-    }
-  },
   componentDidMount () {
     axios.get(`http://www.omdbapi.com/?i=${this.props.show.imdbID}`)
       .then((response) => {
