@@ -20,7 +20,7 @@ const Details = React.createClass({
     }
   },
   componentDidMount () {
-    axios.get(`http://www.omdbapi.com/?=${this.props.show.imdbID}`)
+    axios.get(`http://www.omdbapi.com/?i=${this.props.show.imdbID}`)
       .then((response) => {
         this.setState({omdbData: response.data})
       })
